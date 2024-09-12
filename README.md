@@ -117,7 +117,7 @@ L) Refrences:
 6]	https://www.opensubtitles.org/en/search/subs 
 7]	https://ieeexplore.ieee.org/document/9773697 
 8]  Whisper AI GitHub (https://github.com/openai/whisper)
-9] ffmpeg Documentation(https://ffmpeg.org/documentation.html)
+9]  ffmpeg Documentation(https://ffmpeg.org/documentation.html)
 10] Googletrans Documentation (https://py-googletrans.readthedocs.io/en/latest/)
 11] AssemblyAI API (https://www.assemblyai.com/docs/)
 
