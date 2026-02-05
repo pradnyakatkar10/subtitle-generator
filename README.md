@@ -1,18 +1,12 @@
-# subtitle-generator #
-A) Details of Team members
-I) Sejal Yadav - ysejal7352@gmail.com (ECS 2nd Year)
-II) Nidhi Tripathi - tripathinidhi172@gmail.com (ECS 2nd Year)
-III) Devanshi Singh - devanshisingh228@gmail. (ECS 2nd Year)
-IV) Pradnya Katkar - katkarpradnya184@gmail.com
-
-B) Introduction
+# subtitle-generator 
+A) Introduction
 The project, titled “Subtitle generation with language translation," is designed to facilitate the creation of accessible and multilingual video content. By automating the process of adding precise subtitles and translations to video materials, this project empowers content creators to broaden their viewership, enhance user experience, and provide inclusive content to a global audience. This project combines speech recognition and video editing techniques to streamline a traditionally labor-intensive process. The initial focus is on commonly spoken languages, with the potential for future expansion.
 
-C)Dataset Description
+B)Dataset Description
 
 For this project, no external dataset was used. The system processes video files directly, extracting audio from the video and converting it into text using a speech-to-text model (Whisper). The video files can be in various formats, such as MP4, AVI, or MKV. The extracted audio is processed to generate accurate subtitles, which can then be translated into different languages. This allows the project to work dynamically with any video file provided as input by the user.
 
-D) Dataset Split Info
+C) Dataset Split Info
 
 Since this project does not involve a dataset that requires splitting (such as training and testing data), it handles video inputs directly. The process involves the following steps:
 --A video file is uploaded or provided as input.
@@ -21,7 +15,7 @@ Since this project does not involve a dataset that requires splitting (such as t
 --Subtitles are generated and, if necessary, translated into the selected language.
 Since the input is real-time video/audio processing, there is no need for splitting the data into training and testing sets.
 
-E) Approach
+D) Approach
 The project follows a structured approach to generate subtitles from video files and, if needed, translate them into other languages. Here’s how the approach works step-by-step:
 
 --Input Video Handling:
@@ -52,7 +46,7 @@ Users can select video files, choose the language for transcription and translat
 This approach allows for flexible, dynamic subtitle generation and translation, making video content more accessible across different languages.
 
 
-F) Results
+E) Results
 
 User Interface: 
 ![image](https://github.com/user-attachments/assets/c09c8652-7e3e-4843-bdca-b983333f4238)
@@ -79,7 +73,7 @@ The project outputs the transcription or translation in SRT format, a widely sup
 Subtitled Video Output (Optional):
 If the user chooses to overlay subtitles on the video, the project generates a new video file with the subtitles burned into the video. This file is ready for distribution, making it ideal for sharing across platforms.
 
-G) Dependencies
+F) Dependencies
 --ffmpeg-python
 --torch
 --transformers
@@ -87,7 +81,7 @@ G) Dependencies
 --googletrans
 --whisper
 
-H) Performance and Accuracy
+G) Performance and Accuracy
 
 --Transcription Accuracy: Whisper model has a high accuracy in transcribing clear speech, achieving over 90% accuracy in standard environments.
 --Translation Accuracy: Llama2 provides reliable translations, but some nuances in certain languages may be lost. Further tuning or custom translation models might improve this.
@@ -95,19 +89,16 @@ H) Performance and Accuracy
 --Efficiency: Processing speed and accuracy may decrease with poor audio quality, heavy accents, or multiple overlapping speakers.
 --Limitations: Translations may not be 100% contextually accurate. Heavy background noise can reduce transcription accuracy.
 
-I) F1 Score
+H) F1 Score
 The F1 Score is typically used to evaluate classification models. Since this project focuses on transcription and translation, the F1 Score is not applicable. Instead, accuracy and real-time performance are better measures for evaluating the success of the project.
 
-J) Novelty/Factor
+I) Novelty/Factor
 --Integration of AI for Real-Time Transcription and Translation: This project uses Whisper AI and Llama2 for real-time speech-to-text and multi-language translation.
 --User-Friendly GUI: A Gooey-based GUI is implemented to make it easier for users to upload videos, select languages, and view generated subtitles without needing to interact with the command line.
 --Real-Time Subtitle Generation: The project aims to generate subtitles in real-time, allowing users to quickly process videos without significant delays.
 --Multi-Language Support: Automatic translation into multiple languages is integrated, expanding accessibility to global users.
 
-K) 
-
-
-L) Refrences:
+J) Refrences:
 
 1] Gooey GitHub (https://github.com/chriskiehl/Gooey)
 2]	https://www.irjet.net/archives/V7/i5/IRJET-V7I51463.pdfTutorialspoint: - 
